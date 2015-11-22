@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +12,10 @@
     tools:context="com.udacity.android.maaz.project0.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,75 +27,43 @@
         android:textSize="25sp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/GenericButton"
         android:text="@string/spotify"
         android:id="@+id/spotifyButton"
-        android:layout_marginTop="46dp"
-        android:layout_below="@+id/titleTextView"
-        android:layout_centerHorizontal="true"
-        android:width="240dp"
-        android:background="#F08C35"
-        android:onClick="onClick" />
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/titleTextView" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/GenericButton"
         android:text="@string/scores"
         android:id="@+id/scoresButton"
-        android:layout_below="@+id/spotifyButton"
-        android:layout_alignRight="@+id/libraryButton"
-        android:layout_alignEnd="@+id/libraryButton"
-        android:width="240dp"
-        android:background="#F08C35"
-        android:layout_marginTop="10dp"
-        android:onClick="onClick"/>
+        android:layout_below="@+id/spotifyButton" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/GenericButton"
         android:text="@string/library"
         android:id="@+id/libraryButton"
-        android:layout_below="@+id/scoresButton"
-        android:layout_centerHorizontal="true"
-        android:width="240dp"
-        android:background="#F08C35"
-        android:layout_marginTop="10dp"
-        android:onClick="onClick"/>
+        android:layout_below="@+id/scoresButton" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/GenericButton"
         android:text="@string/bigger"
         android:id="@+id/biggerButton"
-        android:layout_below="@+id/libraryButton"
-        android:layout_centerHorizontal="true"
-        android:width="240dp"
-        android:background="#F08C35"
-        android:layout_marginTop="10dp"
-        android:onClick="onClick"/>
+        android:layout_below="@+id/libraryButton" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/GenericButton"
         android:text="@string/xyz"
         android:id="@+id/xyzButton"
-        android:layout_below="@+id/biggerButton"
-        android:layout_centerHorizontal="true"
-        android:width="240dp"
-        android:background="#F08C35"
-        android:layout_marginTop="10dp"
-        android:onClick="onClick"/>
+        android:layout_below="@+id/biggerButton" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/GenericButton"
         android:text="@string/capstone"
         android:id="@+id/capstoneButton"
         android:layout_below="@+id/xyzButton"
-        android:layout_centerHorizontal="true"
-        android:width="240dp"
-        android:background="#E80000"
-        android:layout_marginTop="10dp"
-        android:onClick="onClick"/>
-</RelativeLayout>
+        android:background="@color/colorCapstone" />
+
+    </RelativeLayout>
+
+</ScrollView>
